@@ -1,11 +1,9 @@
 
-print("Hello word")
+ password = "hello"
+ user_input = ("Please enter your password")
 
-print("Hello")
-=======
-<<<<<<< HEAD
-print("Hello word")
-=======
-print("Hello")
->>>>>>> f9169997079348ba8bc1683dbc1bf421dd548bcd
->>>>>>> bb7aa1541117cbf44ac00f957531236b2cefed15
+Attemp  = 1
+
+ while (password ! = user_imput):
+   Attemp = Attemp + 1
+   user_input = input("Wrong! Attemp no "+ str(Attemp) + 
