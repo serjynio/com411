@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-=======
+# Ask user for the type of book 
+print("What type of book is this?")
+book_type = input() 
 
- password = "hello"
- user_input = ("Please enter your password")
+# Determine if the book is an adventure book
+if (book_type == "adventure"):
+    print("\nI like adventure books!")
 
-Attemp  = 1
-
- while (password ! = user_imput):
-   Attemp = Attemp + 1
-   user_input = input("Wrong! Attemp no "+ str(Attemp) + 
->>>>>>> 9b332f92bcd98964309d1d76bf88fb771c9a52ef
+# Display message
+print("\nFinished reading book.")
