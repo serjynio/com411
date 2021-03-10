@@ -1,19 +1,15 @@
-# Read in user data 
-print("What is your name?")
-name = input() 
+# Read bot data
+print("Please enter number of lives")
+lives = int(input())
 
-print("What is your age?")
-age = int(input())
+print("Please enter energy level")
+energy = int(input())
 
-print("What is your weight?") 
-weight = float(input()) 
+print("Please enter shield level")
+shield = int(input()) 
 
-print("What is your height?")
-height = float(input())
-
-# Calculate bmi
-bmi = weight / (height ** 2)
-
-# Display result
-print (f"{name} , your are {age} years old and your bmi is {bmi} ")
+# Display bot data
+print(f"Lives:  {'x' * lives}")
+print(f"Energy: {'y' * energy}")
+print(f"Shield: {'z' * shield}")
 
