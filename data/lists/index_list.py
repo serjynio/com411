@@ -9,4 +9,6 @@ def run():
   print(f"{path[2]} for {path[3]} steps")
   print(f"{path[4]} for {path[5]} steps")
   print(f"{path[6]} for {path[7]} steps")
-run()
+
+
+
