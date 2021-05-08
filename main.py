@@ -1,6 +1,7 @@
-def list_entities():
+
+'''def list_entities():
   entities =['Mercury','Venus', 'Earth','Mars','Jupiter','Saturn','Uranus','Neptune', 'Pluto']
-  cols = [4,5]
+  cols = [4,5,7]
   for list11 in entities:
     if len(cols) == 0:
       for j in list11:
@@ -12,21 +13,32 @@ def list_entities():
       return
 list_entities()
 
+=======
+def search(file_name):
+  print("Searching...")
+  data = {}
+
+  with open(file_name) as file:
+    section_name = ""
+    for line in file:
+      if (line.startswith("Section")):
+        parts = line.split(":")
+        section_name = parts[1].strip()
+      elif (section_name in data):
+        data[section_name].append(line.strip())
+      else:
+        data[section_name] = [line.strip()]
+    
+   print("Done!")
+   return data
+
+def run():
+  data = search("data/files/txt/books.txt")
+
+  with open("data/files/txt/generated.csv", "w") as file:
+    for section, books in data.items():
+      for book in books:
+        file.write(f"{section},{book}\n")
+>>>>>>> 9c5321bdf58699b5288f213a9f09791927247a90'''
 
 
-
-'''def save():
-  print("How do you want to save the data?")
-  options = ['Export as CSV','Export as TXT','Export as JSON']
-  for index, options in enumerate(options, start =1):
-    print(index, options)
-  u_input = int(input())
-
-  if u_input == range(1, len(options)+1):
-      print(u_input)
-      return u_input
-  else:
-      print('bad command')
-      return None
-
-save()'''
